@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sarah & James — 14 June 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav" id="siteNav">
+    <a href="#hero" class="nav-logo">S & J</a>
+    <div class="nav-dropdown">
+      <span class="nav-trigger">Menu ▾</span>
+      <ul class="nav-list">
+        <li><a href="#details">Details</a></li>
+        <li><a href="#venue">Venue</a></li>
+        <li><a href="#dresscode">Dress Code</a></li>
+        <li><a href="#accommodation">Stay</a></li>
+        <li><a href="#fund">Honeymoon</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">You Are Invited</p>
+      <h1 class="hero-names">Sarah & James</h1>
+      <p class="hero-date">Saturday, the 14th of June 2026</p>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- INVITATION MESSAGE -->
+  <section class="invitation-section" id="invitation">
+    <div class="invitation-card">
+      <p class="invitation-label">Together with their families</p>
+      <h2 class="invitation-heading">Sarah Elisabeth Müller<br><span>&</span><br>James Alexander Whitmore</h2>
+      <p class="invitation-body">
+        joyfully request the honour of your presence<br>
+        at the celebration of their marriage.<br><br>
+        The ceremony will begin at half past two in the afternoon,<br>
+        followed by an evening of dinner, dancing, and celebration.
+      </p>
+      <div class="invitation-divider"></div>
+      <p class="invitation-venue">The Grand Manor Estate · Stellenbosch</p>
+    </div>
+  </section>
+
+  <!-- PHOTO CAROUSEL -->
+  <section class="carousel-section" id="carousel">
+    <h2 class="section-title">Our Story</h2>
+    <div class="carousel-wrapper">
+      <button class="carousel-btn prev" aria-label="Previous">&#8592;</button>
+      <div class="carousel-track-container">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide">
+            <div class="slide-img" style="background: linear-gradient(135deg,#c9b49a,#8a6f5a);">
+              <span>Photo 1</span>
+            </div>
+            <p class="slide-caption">The First Meeting · 2021</p>
+          </div>
+          <div class="carousel-slide">
+            <div class="slide-img" style="background: linear-gradient(135deg,#a8bfa8,#6b8f71);">
+              <span>Photo 2</span>
+            </div>
+            <p class="slide-caption">Paris · 2022</p>
+          </div>
+          <div class="carousel-slide">
+            <div class="slide-img" style="background: linear-gradient(135deg,#c9a4a4,#8f6b6b);">
+              <span>Photo 3</span>
+            </div>
+            <p class="slide-caption">The Proposal · 2024</p>
+          </div>
+          <div class="carousel-slide">
+            <div class="slide-img" style="background: linear-gradient(135deg,#a4b8c9,#6b7f8f);">
+              <span>Photo 4</span>
+            </div>
+            <p class="slide-caption">Engagement Shoot · 2025</p>
+          </div>
+          <div class="carousel-slide">
+            <div class="slide-img" style="background: linear-gradient(135deg,#c9c4a4,#8f8a6b);">
+              <span>Photo 5</span>
+            </div>
+            <p class="slide-caption">Adventures Together</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn next" aria-label="Next">&#8594;</button>
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </section>
+
+  <!-- WEDDING DETAILS CARDS -->
+  <section class="details-section" id="details">
+    <h2 class="section-title">Wedding Details</h2>
+    <div class="details-grid">
+      <div class="detail-card">
+        <div class="detail-icon">&#128197;</div>
+        <h3>Date</h3>
+        <p>Saturday<br>14 June 2026</p>
+      </div>
+      <div class="detail-card">
+        <div class="detail-icon">&#128336;</div>
+        <h3>Time</h3>
+        <p>Ceremony at 14:30<br>Reception from 17:00</p>
+      </div>
+      <div class="detail-card">
+        <div class="detail-icon">&#127968;</div>
+        <h3>Venue</h3>
+        <p>The Grand Manor Estate<br>Stellenbosch</p>
+      </div>
+      <div class="detail-card">
+        <div class="detail-icon">&#128205;</div>
+        <h3>Location</h3>
+        <p>12 Manor Lane<br>Stellenbosch, 7600</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP SECTION -->
+  <section class="map-section" id="venue">
+    <h2 class="section-title">Find Us</h2>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.0!2d18.8601!3d-33.9321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDU1JzU1LjYiUyAxOMKwNTEnMzYuNCJF!5e0!3m2!1sen!2sza!4v1234567890"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+    <button class="directions-btn" id="directionsBtn">
+      <span>Open Directions</span>
+    </button>
+  </section>
+
+  <!-- DRESS CODE -->
+  <section class="dresscode-section" id="dresscode">
+    <h2 class="section-title">Dress Code</h2>
+    <p class="section-subtitle">Garden Formal</p>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-trigger">
+          <span>Suggested Attire</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>Ladies: Formal dresses or elegant jumpsuits. Midi and maxi lengths preferred for the garden setting.</p>
+          <p>Gentlemen: Suit and tie, or a well-fitted blazer with dress trousers.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">
+          <span>Suggested Colours</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>We love sage green, dusty rose, champagne, terracotta, navy, and earthy tones. Think garden and warmth.</p>
+          <div class="colour-swatches">
+            <span style="background:#9caf9c" title="Sage Green"></span>
+            <span style="background:#c4a89a" title="Dusty Rose"></span>
+            <span style="background:#d4c4a0" title="Champagne"></span>
+            <span style="background:#b87060" title="Terracotta"></span>
+            <span style="background:#3a4f6e" title="Navy"></span>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-trigger">
+          <span>Please Avoid</span>
+          <span class="accordion-icon">+</span>
+        </button>
+        <div class="accordion-body">
+          <p>White, ivory, or cream (reserved for the bride). Black-tie tuxedos. Overly casual attire such as jeans, sneakers, or shorts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VENUE RULES -->
+  <section class="rules-section" id="rules">
+    <h2 class="section-title">A Few Kind Requests</h2>
+    <div class="rules-grid">
+      <div class="rule-card">
+        <div class="rule-icon">📵</div>
+        <h3>Unplugged Ceremony</h3>
+        <p>We ask that phones be put away during the ceremony. Our photographer will capture every moment.</p>
+      </div>
+      <div class="rule-card">
+        <div class="rule-icon">🚭</div>
+        <h3>No Smoking Indoors</h3>
+        <p>Smoking is permitted only in the designated area near the garden entrance.</p>
+      </div>
+      <div class="rule-card">
+        <div class="rule-icon">🌸</div>
+        <h3>Respect the Gardens</h3>
+        <p>The estate gardens are beautiful and fragile. Please stay on marked paths.</p>
+      </div>
+      <div class="rule-card">
+        <div class="rule-icon">🥂</div>
+        <h3>Drink Responsibly</h3>
+        <p>Complimentary shuttle service is available. Please make use of it if needed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCOMMODATION -->
+  <section class="accommodation-section" id="accommodation">
+    <h2 class="section-title">Places to Stay</h2>
+    <p class="section-subtitle">We recommend booking early — June is peak season in the Cape Winelands.</p>
+    <div class="hotel-grid">
+      <div class="hotel-card">
+        <div class="hotel-header" style="background: linear-gradient(135deg,#c9b49a,#8a6f5a)"></div>
+        <div class="hotel-body">
+          <h3>The Manor Guest House</h3>
+          <p>Closest to the venue. Elegant rooms with vineyard views. Complimentary breakfast included.</p>
+          <p class="hotel-contact">📞 +27 21 887 1234</p>
+          <button class="call-btn" onclick="this.classList.add('called');this.textContent='Copied!'">Call</button>
+        </div>
+      </div>
+      <div class="hotel-card">
+        <div class="hotel-header" style="background: linear-gradient(135deg,#a8bfa8,#6b8f71)"></div>
+        <div class="hotel-body">
+          <h3>Vine & Stone Boutique</h3>
+          <p>5-minute drive from the venue. Modern boutique hotel with a celebrated wine cellar.</p>
+          <p class="hotel-contact">📞 +27 21 887 5678</p>
+          <button class="call-btn" onclick="this.classList.add('called');this.textContent='Copied!'">Call</button>
+        </div>
+      </div>
+      <div class="hotel-card">
+        <div class="hotel-header" style="background: linear-gradient(135deg,#c9a4a4,#8f6b6b)"></div>
+        <div class="hotel-body">
+          <h3>Stellenbosch Inn</h3>
+          <p>Budget-friendly option in the town centre, 10 minutes by shuttle from the estate.</p>
+          <p class="hotel-contact">📞 +27 21 887 9012</p>
+          <button class="call-btn" onclick="this.classList.add('called');this.textContent='Copied!'">Call</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HONEYMOON FUND -->
+  <section class="fund-section" id="fund">
+    <div class="fund-inner">
+      <h2 class="section-title light">Honeymoon Fund</h2>
+      <p class="fund-body">
+        Your presence is our greatest gift. However, if you would like to contribute to our honeymoon adventure through Japan and New Zealand, we would be truly grateful.
+      </p>
+      <button class="qr-btn" id="qrBtn">View QR Code</button>
+    </div>
+  </section>
+
+  <!-- QR MODAL -->
+  <div class="modal-overlay" id="qrModal">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">×</button>
+      <h3>Scan to Contribute</h3>
+      <div class="qr-placeholder">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="10" width="30" height="30" fill="none" stroke="#5a4a3a" stroke-width="4"/>
+          <rect x="16" y="16" width="18" height="18" fill="#5a4a3a"/>
+          <rect x="60" y="10" width="30" height="30" fill="none" stroke="#5a4a3a" stroke-width="4"/>
+          <rect x="66" y="16" width="18" height="18" fill="#5a4a3a"/>
+          <rect x="10" y="60" width="30" height="30" fill="none" stroke="#5a4a3a" stroke-width="4"/>
+          <rect x="16" y="66" width="18" height="18" fill="#5a4a3a"/>
+          <rect x="60" y="55" width="8" height="8" fill="#5a4a3a"/>
+          <rect x="72" y="55" width="8" height="8" fill="#5a4a3a"/>
+          <rect x="84" y="55" width="8" height="8" fill="#5a4a3a"/>
+          <rect x="60" y="67" width="8" height="8" fill="#5a4a3a"/>
+          <rect x="72" y="67" width="8" height="8" fill="#5a4a3a"/>
+          <rect x="60" y="79" width="8" height="8" fill="#5a4a3a"/>
+          <rect x="72" y="79" width="20" height="8" fill="#5a4a3a"/>
+          <rect x="45" y="10" width="8" height="8" fill="#5a4a3a"/>
+          <rect x="45" y="22" width="8" height="8" fill="#5a4a3a"/>
+          <rect x="45" y="34" width="8" height="8" fill="#5a4a3a"/>
+          <rect x="45" y="46" width="8" height="8" fill="#5a4a3a"/>
+          <rect x="10" y="46" width="8" height="8" fill="#5a4a3a"/>
+          <rect x="22" y="46" width="8" height="8" fill="#5a4a3a"/>
+          <rect x="34" y="46" width="8" height="8" fill="#5a4a3a"/>
+        </svg>
+      </div>
+      <p>Thank you from the bottom of our hearts.</p>
+    </div>
+  </div>
+
+  <!-- RSVP -->
+  <section class="rsvp-section" id="rsvp">
+    <h2 class="section-title">RSVP</h2>
+    <p class="section-subtitle">Kindly respond by 1 May 2026</p>
+    <div class="rsvp-card" id="rsvpCard">
+      <!-- Main guest -->
+      <fieldset class="rsvp-fieldset">
+        <legend>Your Details</legend>
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name *</label>
+            <input type="text" id="firstName" placeholder="Sarah">
+          </div>
+          <div class="form-group">
+            <label>Surname *</label>
+            <input type="text" id="lastName" placeholder="Müller">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Medical Conditions / Dietary Requirements</label>
+          <input type="text" id="medical" placeholder="e.g. vegetarian, nut allergy">
+        </div>
+        <div class="form-group">
+          <label>Song Request 🎵</label>
+          <input type="text" id="song" placeholder="e.g. Can't Help Falling in Love">
+        </div>
+      </fieldset>
+
+      <!-- Plus one -->
+      <fieldset class="rsvp-fieldset">
+        <legend>Plus One</legend>
+        <label class="toggle-label">
+          <input type="checkbox" id="plusOneToggle">
+          <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          Bringing a plus one?
+        </label>
+        <div class="collapsible" id="plusOneFields">
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" id="plusFirstName" placeholder="James">
+            </div>
+            <div class="form-group">
+              <label>Surname *</label>
+              <input type="text" id="plusLastName" placeholder="Whitmore">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Medical Conditions / Dietary Requirements</label>
+            <input type="text" id="plusMedical" placeholder="e.g. gluten free">
+          </div>
+          <div class="form-group">
+            <label>Song Request 🎵</label>
+            <input type="text" id="plusSong" placeholder="e.g. Dancing Queen">
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- Children -->
+      <fieldset class="rsvp-fieldset">
+        <legend>Children</legend>
+        <label class="toggle-label">
+          <input type="checkbox" id="childrenToggle">
+          <span class="toggle-track"><span class="toggle-thumb"></span></span>
+          Children attending?
+        </label>
+        <div class="collapsible" id="childrenFields">
+          <div id="childrenList"></div>
+          <button type="button" class="add-child-btn" id="addChildBtn">+ Add Child</button>
+        </div>
+      </fieldset>
+
+      <div class="form-errors" id="formErrors"></div>
+      <button class="submit-btn" id="rsvpSubmit">Confirm RSVP</button>
+    </div>
+
+    <!-- Success screen -->
+    <div class="rsvp-success" id="rsvpSuccess">
+      <div class="success-icon">✓</div>
+      <h3>We can't wait to celebrate with you!</h3>
+      <p>Your RSVP has been received. See you on 14 June 2026.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>Sarah & James · 14 June 2026 · Stellenbosch</p>
+    <p class="footer-sub">Made with love ♥</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
